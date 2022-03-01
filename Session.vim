@@ -10,10 +10,10 @@ vmap gx <Plug>NetrwBrowseXVis
 nmap gx <Plug>NetrwBrowseX
 noremap h ;
 noremap l h
+nmap <expr> <F28> XTermPasteBegin("i")
 vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()
 nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))
 vmap <expr> <F28> XTermPasteBegin("c")
-nmap <expr> <F28> XTermPasteBegin("i")
 omap <expr> <F28> XTermPasteBegin("i")
 let &cpo=s:cpo_save
 unlet s:cpo_save
@@ -29,7 +29,7 @@ set runtimepath=~/.vim,~/.vim/plugged/vim-racer/,~/.vim/plugged/rust.vim/,~/.vim
 set spelllang=ru_ru
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set textwidth=110
-set window=78
+set window=57
 let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
 silent only
@@ -60,9 +60,9 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 25 + 39) / 79)
-exe '2resize ' . ((&lines * 25 + 39) / 79)
-exe '3resize ' . ((&lines * 25 + 39) / 79)
+exe '1resize ' . ((&lines * 18 + 29) / 58)
+exe '2resize ' . ((&lines * 18 + 29) / 58)
+exe '3resize ' . ((&lines * 18 + 29) / 58)
 argglobal
 setlocal keymap=
 setlocal noarabic
@@ -190,12 +190,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 80 - ((4 * winheight(0) + 12) / 25)
+let s:l = 421 - ((0 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 80
-normal! 029|
+keepjumps 421
+normal! 0
 wincmd w
 argglobal
 if bufexists("tra/english/p\#kift25.tra") | buffer tra/english/p\#kift25.tra | else | edit tra/english/p\#kift25.tra | endif
@@ -326,12 +326,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 75 - ((0 * winheight(0) + 12) / 25)
+let s:l = 60 - ((5 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 75
-normal! 010|
+keepjumps 60
+normal! 0
 wincmd w
 argglobal
 if bufexists("d/p\#kift25.d") | buffer d/p\#kift25.d | else | edit d/p\#kift25.d | endif
@@ -462,16 +462,16 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 224 - ((0 * winheight(0) + 12) / 25)
+let s:l = 173 - ((2 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 224
-normal! 0
+keepjumps 173
+normal! 014|
 wincmd w
-exe '1resize ' . ((&lines * 25 + 39) / 79)
-exe '2resize ' . ((&lines * 25 + 39) / 79)
-exe '3resize ' . ((&lines * 25 + 39) / 79)
+exe '1resize ' . ((&lines * 18 + 29) / 58)
+exe '2resize ' . ((&lines * 18 + 29) / 58)
+exe '3resize ' . ((&lines * 18 + 29) / 58)
 tabnext 1
 badd +1 tra/russian/P\#KIFT25.tra
 badd +1 tra/english/p\#kift25.tra
