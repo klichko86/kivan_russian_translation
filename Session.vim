@@ -11,10 +11,10 @@ endif
 set shortmess=aoO
 argglobal
 %argdel
-$argadd tra/russian/P\#KIFT25.tra
-$argadd tra/english/p\#kift25.tra
-$argadd d/p\#kift25.d
-edit tra/russian/P\#KIFT25.tra
+$argadd tra/english/p\#kivj.tra
+$argadd tra/russian/P\#KIVJ.tra
+$argadd d/p\#kivj.d
+edit tra/russian/P\#KIVJ.tra
 set splitbelow splitright
 wincmd _ | wincmd |
 split
@@ -31,9 +31,11 @@ set winheight=1
 set winminwidth=0
 set winwidth=1
 exe '1resize ' . ((&lines * 24 + 38) / 76)
-exe '2resize ' . ((&lines * 26 + 38) / 76)
-exe '3resize ' . ((&lines * 22 + 38) / 76)
+exe '2resize ' . ((&lines * 24 + 38) / 76)
+exe '3resize ' . ((&lines * 24 + 38) / 76)
 argglobal
+if bufexists("tra/russian/P\#KIVJ.tra") | buffer tra/russian/P\#KIVJ.tra | else | edit tra/russian/P\#KIVJ.tra | endif
+balt tra/english/p\#kivj.tra
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -43,35 +45,15 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 203 - ((2 * winheight(0) + 12) / 24)
+let s:l = 6 - ((5 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 203
-normal! 024|
-wincmd w
-argglobal
-if bufexists("tra/english/p\#kift25.tra") | buffer tra/english/p\#kift25.tra | else | edit tra/english/p\#kift25.tra | endif
-balt tra/russian/P\#KIFT25.tra
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 224 - ((24 * winheight(0) + 13) / 26)
-if s:l < 1 | let s:l = 1 | endif
-keepjumps exe s:l
-normal! zt
-keepjumps 224
+keepjumps 6
 normal! 0
 wincmd w
 argglobal
-if bufexists("d/p\#kift25.d") | buffer d/p\#kift25.d | else | edit d/p\#kift25.d | endif
-balt tra/russian/P\#KIFT25.tra
+if bufexists("tra/english/p\#kivj.tra") | buffer tra/english/p\#kivj.tra | else | edit tra/english/p\#kivj.tra | endif
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -81,20 +63,40 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 601 - ((1 * winheight(0) + 11) / 22)
+let s:l = 1 - ((0 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 601
+keepjumps 1
 normal! 0
 wincmd w
+argglobal
+if bufexists("d/p\#kivj.d") | buffer d/p\#kivj.d | else | edit d/p\#kivj.d | endif
+balt tra/english/p\#kivj.tra
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 46 - ((21 * winheight(0) + 12) / 24)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 46
+normal! 0
+wincmd w
+3wincmd w
 exe '1resize ' . ((&lines * 24 + 38) / 76)
-exe '2resize ' . ((&lines * 26 + 38) / 76)
-exe '3resize ' . ((&lines * 22 + 38) / 76)
+exe '2resize ' . ((&lines * 24 + 38) / 76)
+exe '3resize ' . ((&lines * 24 + 38) / 76)
 tabnext 1
-badd +1 tra/russian/P\#KIFT25.tra
-badd +1 tra/english/p\#kift25.tra
-badd +1 d/p\#kift25.d
+badd +1 tra/english/p\#kivj.tra
+badd +1 tra/russian/P\#KIVJ.tra
+badd +1 d/p\#kivj.d
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -106,6 +108,7 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
