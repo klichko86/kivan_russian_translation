@@ -10,10 +10,10 @@ vmap gx <Plug>NetrwBrowseXVis
 nmap gx <Plug>NetrwBrowseX
 noremap h ;
 noremap l h
+nmap <expr> <F28> XTermPasteBegin("i")
 vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()
 nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))
 vmap <expr> <F28> XTermPasteBegin("c")
-nmap <expr> <F28> XTermPasteBegin("i")
 omap <expr> <F28> XTermPasteBegin("i")
 let &cpo=s:cpo_save
 unlet s:cpo_save
@@ -23,6 +23,7 @@ set fileencodings=ucs-bom,utf-8,default,latin1
 set helplang=en
 set langmap=ёйцукенгшщзхъфывап��олджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfg;jkh\\l'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>
 set nomodeline
+set pastetoggle=<F29>
 set printoptions=paper:letter
 set ruler
 set runtimepath=~/.vim,~/.vim/plugged/vim-racer/,~/.vim/plugged/rust.vim/,~/.vim/plugged/vim-bracketed-paste/,~/.vim/plugged/vim-sensible/,/var/lib/vim/addons,/etc/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim82,/usr/share/vim/vimfiles/after,/etc/vim/after,/var/lib/vim/addons/after,~/.vim/plugged/rust.vim/after,~/.vim/after
@@ -59,9 +60,9 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 25 + 39) / 79)
-exe '2resize ' . ((&lines * 25 + 39) / 79)
-exe '3resize ' . ((&lines * 25 + 39) / 79)
+exe '1resize ' . ((&lines * 18 + 29) / 58)
+exe '2resize ' . ((&lines * 18 + 29) / 58)
+exe '3resize ' . ((&lines * 18 + 29) / 58)
 argglobal
 if bufexists("tra/russian/P\#KIVJ.tra") | buffer tra/russian/P\#KIVJ.tra | else | edit tra/russian/P\#KIVJ.tra | endif
 balt tra/english/p\#kivj.tra
@@ -191,12 +192,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 47 - ((19 * winheight(0) + 12) / 25)
+let s:l = 93 - ((6 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 47
-normal! 023|
+keepjumps 93
+normal! 014|
 wincmd w
 argglobal
 if bufexists("tra/english/p\#kivj.tra") | buffer tra/english/p\#kivj.tra | else | edit tra/english/p\#kivj.tra | endif
@@ -327,12 +328,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 58 - ((24 * winheight(0) + 12) / 25)
+let s:l = 87 - ((5 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 58
-normal! 0
+keepjumps 87
+normal! 042|
 wincmd w
 argglobal
 if bufexists("d/p\#kivj.d") | buffer d/p\#kivj.d | else | edit d/p\#kivj.d | endif
@@ -463,16 +464,16 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 73 - ((12 * winheight(0) + 12) / 25)
+let s:l = 388 - ((14 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 73
-normal! 0
+keepjumps 388
+normal! 024|
 wincmd w
-exe '1resize ' . ((&lines * 25 + 39) / 79)
-exe '2resize ' . ((&lines * 25 + 39) / 79)
-exe '3resize ' . ((&lines * 25 + 39) / 79)
+exe '1resize ' . ((&lines * 18 + 29) / 58)
+exe '2resize ' . ((&lines * 18 + 29) / 58)
+exe '3resize ' . ((&lines * 18 + 29) / 58)
 tabnext 1
 badd +1 tra/english/p\#kivj.tra
 badd +1 tra/russian/P\#KIVJ.tra
@@ -488,6 +489,7 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
