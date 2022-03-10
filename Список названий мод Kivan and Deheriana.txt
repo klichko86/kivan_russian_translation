@@ -63,9 +63,9 @@ setup.tra
 @103 Malenti - Маленти, мутировавшие дети сахуагина, которые выглядели как морские эльфы.
 @155 Dryad's Braid - Коса Дриады.
 @158 Elven Spear of Entanglement - Эльфийское Копье Запутывания.
-@172 War of the Five - Война Пяти.
+@172 War of the Five - Война Пятерки.
 @172 Tree of Souls - Древо Душ.
-@172 Fierce Kestrel - Свирепые Кречеты.
+@172,@173 Fierce Kestrel - Свирепые Кречеты.
 @174 Gift of the Seldarine - Дар Селдарина.
 @176 Wreath of Shilmista - Венок из Шилмисты.
 Имена:
