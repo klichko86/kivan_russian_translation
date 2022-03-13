@@ -45,12 +45,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 236 - ((14 * winheight(0) + 12) / 24)
+let s:l = 273 - ((10 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 236
-normal! 09|
+keepjumps 273
+normal! 0
 wincmd w
 argglobal
 if bufexists("tra/english/p\#kivj.tra") | buffer tra/english/p\#kivj.tra | else | edit tra/english/p\#kivj.tra | endif
@@ -64,11 +64,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 200 - ((1 * winheight(0) + 12) / 24)
+let s:l = 256 - ((22 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 200
+keepjumps 256
 normal! 0
 wincmd w
 argglobal
@@ -83,11 +83,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 937 - ((18 * winheight(0) + 12) / 24)
+let s:l = 1083 - ((1 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 937
+keepjumps 1083
 normal! 0
 wincmd w
 exe '1resize ' . ((&lines * 24 + 38) / 76)
@@ -108,6 +108,7 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
