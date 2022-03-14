@@ -10,10 +10,10 @@ vmap gx <Plug>NetrwBrowseXVis
 nmap gx <Plug>NetrwBrowseX
 noremap h ;
 noremap l h
+nmap <expr> <F28> XTermPasteBegin("i")
 vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()
 nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))
 vmap <expr> <F28> XTermPasteBegin("c")
-nmap <expr> <F28> XTermPasteBegin("i")
 omap <expr> <F28> XTermPasteBegin("i")
 let &cpo=s:cpo_save
 unlet s:cpo_save
@@ -29,7 +29,6 @@ set runtimepath=~/.vim,~/.vim/plugged/vim-racer/,~/.vim/plugged/rust.vim/,~/.vim
 set spelllang=ru_ru
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set textwidth=110
-set window=78
 let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 let v:this_session=expand("<sfile>:p")
 silent only
@@ -60,9 +59,9 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 25 + 39) / 79)
-exe '2resize ' . ((&lines * 25 + 39) / 79)
-exe '3resize ' . ((&lines * 25 + 39) / 79)
+exe '1resize ' . ((&lines * 18 + 29) / 58)
+exe '2resize ' . ((&lines * 18 + 29) / 58)
+exe '3resize ' . ((&lines * 18 + 29) / 58)
 argglobal
 if bufexists("tra/russian/P\#KIVJ.tra") | buffer tra/russian/P\#KIVJ.tra | else | edit tra/russian/P\#KIVJ.tra | endif
 balt tra/english/p\#kivj.tra
@@ -192,12 +191,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 286 - ((13 * winheight(0) + 12) / 25)
+let s:l = 313 - ((17 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 286
-normal! 017|
+keepjumps 313
+normal! 084|
 wincmd w
 argglobal
 if bufexists("tra/english/p\#kivj.tra") | buffer tra/english/p\#kivj.tra | else | edit tra/english/p\#kivj.tra | endif
@@ -328,11 +327,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 281 - ((24 * winheight(0) + 12) / 25)
+let s:l = 276 - ((11 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 281
+keepjumps 276
 normal! 0
 wincmd w
 argglobal
@@ -464,16 +463,16 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1184 - ((11 * winheight(0) + 12) / 25)
+let s:l = 1257 - ((17 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1184
+keepjumps 1257
 normal! 0
 wincmd w
-exe '1resize ' . ((&lines * 25 + 39) / 79)
-exe '2resize ' . ((&lines * 25 + 39) / 79)
-exe '3resize ' . ((&lines * 25 + 39) / 79)
+exe '1resize ' . ((&lines * 18 + 29) / 58)
+exe '2resize ' . ((&lines * 18 + 29) / 58)
+exe '3resize ' . ((&lines * 18 + 29) / 58)
 tabnext 1
 badd +1 tra/english/p\#kivj.tra
 badd +1 tra/russian/P\#KIVJ.tra
