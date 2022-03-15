@@ -45,12 +45,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal nofen
 silent! normal! zE
-let s:l = 320 - ((10 * winheight(0) + 12) / 24)
+let s:l = 365 - ((22 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 320
-normal! 041|
+keepjumps 365
+normal! 0
 wincmd w
 argglobal
 if bufexists("tra/english/p\#kivj.tra") | buffer tra/english/p\#kivj.tra | else | edit tra/english/p\#kivj.tra | endif
@@ -64,11 +64,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 304 - ((21 * winheight(0) + 12) / 24)
+let s:l = 327 - ((21 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 304
+keepjumps 327
 normal! 036|
 wincmd w
 argglobal
@@ -83,13 +83,14 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1330 - ((22 * winheight(0) + 12) / 24)
+let s:l = 1514 - ((22 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1330
+keepjumps 1514
 normal! 0
 wincmd w
+3wincmd w
 exe '1resize ' . ((&lines * 24 + 38) / 76)
 exe '2resize ' . ((&lines * 24 + 38) / 76)
 exe '3resize ' . ((&lines * 24 + 38) / 76)
