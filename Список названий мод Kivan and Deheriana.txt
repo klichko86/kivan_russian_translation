@@ -1,4 +1,4 @@
-bp#deh.tra
+﻿BP#DEH.TRA
 @191 Hill of the Stars - Холм Звезд.
 @193 Castle Trinity's - Замок Тринити. 
 @193 Time of Troubles - Смутное Время.
@@ -20,23 +20,23 @@ bp#deh.tra
 @314 Mazzy the Wild Fire - Маззи Дикий Огонь.
 
 
-bp#kiv.tra
-@26 Daione Dun - Дэйон Дан - Холм Звезд.
-@26 Daoine Teague Feer - Дэойн Тиг Фир - это праздник Шилмисты "Звездное Очарование". 
-@26 Forest of Shadows - Лес Теней.
+BP#KIV.TRA
+@26  Daione Dun - Дэйон Дан - Холм Звезд.
+@26  Daoine Teague Feer - Дэойн Тиг Фир - это праздник Шилмисты "Звездное Очарование". 
+@26  Forest of Shadows - Лес Теней.
 @59,61 Shilmista - Шилмиста, Лес Теней на Общем языке, родная земля Кивана.
-@93 Snowflake Mountains - Снежные Горы.
-@94 Carradoon - Каррадун - Поселение людей.
-@94 Edificiant Library - Библиотека Назиданий.
+@93  Snowflake Mountains - Снежные Горы.
+@94  Carradoon - Каррадун - Поселение людей.
+@94  Edificiant Library - Библиотека Назиданий.
 @200 Hymn to Shaundakul - Гимн Шаундакулу(человеческому богу).
 
 Имена:
-@95 Echtellion - Эктеллион.
-@95 Tinuvil and Arenel - Тинувиль и Аренэль.
-@23 Ieriyn - Иерин - Морская звезда или звезда моряков.
+@95  Echtellion - Эктеллион.
+@95  Tinuvil and Arenel - Тинувиль и Аренэль.
+@23  Ieriyn - Иерин - Морская звезда или звезда моряков.
 
 
-bp#kiv25.tra
+BP#KIV25.TRA
 @138 Thayvian magic - Тэйвианская магия.
 @164 Athar - Атар. Одна из фракций города Сигил.
 @164 Bleak Cabal - Мрачная Клика (Мрачная Каббала). Одна из фракций города Сигил.
@@ -52,14 +52,14 @@ bp#kiv25.tra
 @320 Elvendom - Эльвендом - Эльфийство, Эльфийское царство, Королевство эльфов.
 
 Имена:
-@21 Kethvan - Кетван на языке крылатых эльфов авариэль, имя Кивана.
+@21  Kethvan - Кетван на языке крылатых эльфов авариэль, имя Кивана.
 @273 Cevendil the woodsman - Лесоруб Севендил.
 @292 Srinshee - Шринши (Вaelnorn, высший маг эльфов города Миф Драннор,эльфийка).
 
-journal.tra
+JOURNAL.TRA
 @10000 The Lover's Ring - Кольцо Любовницы.
 
-setup.tra
+SETUP.TRA
 @93  Dreamcatcher Amulet - Амулет Ловец Снов.
 @102 Sahuagin Nosering - Сахуагиново Кольцо для Носа.
 @103 Malenti - Маленти, мутировавшие дети сахуагина, которые выглядели как морские эльфы.
@@ -72,7 +72,7 @@ setup.tra
 @176 Wreath of Shilmista - Венок из Шилмисты.
 
 Имена:
-@99 Neiros Gellantara - Нэйрос Геллантара.
+@99  Neiros Gellantara - Нэйрос Геллантара.
 @103 Jozzi Seasnake - Джоззи Морской Змей.
 @104 Petyr - Петир.
 @149 Shong - Шонг.
@@ -81,30 +81,30 @@ setup.tra
 @174 Ellesime the Fair - Эллесим Прекрасная.
 @174 Bane - Бэйн, Лорд Тьмы.
 
-p#ki25j.tra
+P#KI25J.TRA
 Имена:
 @100 Lord of Murder's - Владыка Убийств(а) (Баал).
 
-p#iitm.tra
+P#IITM.TRA
 Имена:
 Neiros Gellantara - Нэйрос Геллантара.
-@10 Sailmaker - Парусный мастер(Нэйрос Геллантара). 
+@10  Sailmaker - Парусный мастер(Нэйрос Геллантара). 
 
-p#kilt.tra
+P#KILT.TRA
 @258 Labraen - Лабраен (на эльфийском стрелец, созвездие).
 @258 Shilmistian - Шилмистианский(ие).
 @263 Shaundral - Шундрал (Дрейфующая Звезда).
 @374 Virga - Вирга - дождь, который зарождается и падает высоко сверху, но слишком быстро испаряется и не достигает земли.
 
 Имена:
-@87 Khalreshaar - Калрешеар - Владычица Леса.
+@87  Khalreshaar - Калрешеар - Владычица Леса.
 @167 Solonque - не верно, опечатка. Правильно Solonor - Солонор (эльфийский бог).
 @169 Gil'Alana - Гил'Алана (прабабушка Кивана).
 @334 Bitch Queen - Umberlee - Амберли (богиня океанов, течений, волн, морских ветров).
 
-p#kilt25
-@6 Star of the Lost - Звезда Потерянных.
-@7 High Hedge Spring - Источник Высокая Ограда.
+P#KILT25
+@6   Star of the Lost - Звезда Потерянных.
+@7   High Hedge Spring - Источник Высокая Ограда.
 @274 Forgotten Temple - Забытый Храм.
 @409 Crown Wars - Войны Корон.
 
@@ -113,3 +113,9 @@ p#kilt25
 @409 Araleth Letheranil - Аралет Летеранил (Prince of Stars - Принц Звезд).
 @409 Twilight Rider - Сумеречный Всадник.
 @423 Nymwael - Нимваэль.
+
+P#KIMAQ.TRA
+
+Имена:
+@4  Keth - Кет и Keth'sim Dwin'anea одно и тоже лицо.
+@77 Keth'sim Dwin'anea - Кет'сим Двин'анэа.
