@@ -9,7 +9,7 @@ bp#deh.tra
 @227 Cormanthyr - Кормантир.
 @228 Wyrm - Вирм, змей, дракон.
 @228 Lodestar - Лодестар - Путеводная звезда.
-@375 Shilmista - Лес Шилмиста.
+@375 Shilmista - Шилмиста.
 
 Имена:
 @25  Demin - Жрица Демин.
@@ -28,7 +28,7 @@ bp#kiv.tra
 @93 Snowflake Mountains - Снежные Горы.
 @94 Carradoon - Каррадун - Поселение людей.
 @94 Edificiant Library - Библиотека Назиданий.
-@200 Hymn to Shaundakul - Гимн Шондакулу(человеческому богу).
+@200 Hymn to Shaundakul - Гимн Шаундакулу(человеческому богу).
 
 Имена:
 @95 Echtellion - Эктеллион.
@@ -37,6 +37,7 @@ bp#kiv.tra
 
 
 bp#kiv25.tra
+@138 Thayvian magic - Тэйвианская магия.
 @164 Athar - Атар. Одна из фракций города Сигил.
 @164 Bleak Cabal - Мрачная Клика (Мрачная Каббала). Одна из фракций города Сигил.
 @164 Doomguard - Стражи Судьбы. Одна из фракций города Сигил.
@@ -45,6 +46,7 @@ bp#kiv25.tra
 @193 Terra Incognita - Терра Инкогнита - Неизвестная земля.
 @193 Chult - Чулт, полуостров.
 @270 Ice Berserker's Lodge - Домик Ледяного Берсерка.
+@280 Silverymoon - Серебристая Луна.
 @291 The City of Song - Город Песен. 
 @291 Year of the Soaring Stars - Год Парящих Звезд.
 @320 Elvendom - Эльвендом - Эльфийство, Эльфийское царство, Королевство эльфов.
@@ -59,7 +61,7 @@ journal.tra
 
 setup.tra
 @93  Dreamcatcher Amulet - Амулет Ловец Снов.
-@102 Sahuagin Nosering - Сахуагиново Кольцо для носа.
+@102 Sahuagin Nosering - Сахуагиново Кольцо для Носа.
 @103 Malenti - Маленти, мутировавшие дети сахуагина, которые выглядели как морские эльфы.
 @155 Dryad's Braid - Коса Дриады.
 @158 Elven Spear of Entanglement - Эльфийское Копье Запутывания.
@@ -68,6 +70,7 @@ setup.tra
 @172,@173 Fierce Kestrel - Свирепые Кречеты.
 @174 Gift of the Seldarine - Дар Селдарина.
 @176 Wreath of Shilmista - Венок из Шилмисты.
+
 Имена:
 @99 Neiros Gellantara - Нэйрос Геллантара.
 @103 Jozzi Seasnake - Джоззи Морской Змей.
@@ -77,3 +80,36 @@ setup.tra
 @172 Lady of Murder - Леди Убийств.
 @174 Ellesime the Fair - Эллесим Прекрасная.
 @174 Bane - Бэйн, Лорд Тьмы.
+
+p#ki25j.tra
+Имена:
+@100 Lord of Murder's - Владыка Убийств(а) (Баал).
+
+p#iitm.tra
+Имена:
+Neiros Gellantara - Нэйрос Геллантара.
+@10 Sailmaker - Парусный мастер(Нэйрос Геллантара). 
+
+p#kilt.tra
+@258 Labraen - Лабраен (на эльфийском стрелец, созвездие).
+@258 Shilmistian - Шилмистианский(ие).
+@263 Shaundral - Шундрал (Дрейфующая Звезда).
+@374 Virga - Вирга - дождь, который зарождается и падает высоко сверху, но слишком быстро испаряется и не достигает земли.
+
+Имена:
+@87 Khalreshaar - Калрешеар - Владычица Леса.
+@167 Solonque - не верно, опечатка. Правильно Solonor - Солонор (эльфийский бог).
+@169 Gil'Alana - Гил'Алана (прабабушка Кивана).
+@334 Bitch Queen - Umberlee - Амберли (богиня океанов, течений, волн, морских ветров).
+
+p#kilt25
+@6 Star of the Lost - Звезда Потерянных.
+@7 High Hedge Spring - Источник Высокая Ограда.
+@274 Forgotten Temple - Забытый Храм.
+@409 Crown Wars - Войны Корон.
+
+Имена:
+@409 Fen'al'arel - Фен'ал'арэль.
+@409 Araleth Letheranil - Аралет Летеранил (Prince of Stars - Принц Звезд).
+@409 Twilight Rider - Сумеречный Всадник.
+@423 Nymwael - Нимваэль.
