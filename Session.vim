@@ -192,11 +192,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 79 - ((9 * winheight(0) + 9) / 18)
+let s:l = 112 - ((15 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 79
+keepjumps 112
 normal! 0
 wincmd w
 argglobal
@@ -328,12 +328,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 84 - ((15 * winheight(0) + 9) / 18)
+let s:l = 107 - ((9 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 84
-normal! 014|
+keepjumps 107
+normal! 0
 wincmd w
 argglobal
 if bufexists("d/p\#kipid.d") | buffer d/p\#kipid.d | else | edit d/p\#kipid.d | endif
@@ -464,11 +464,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 674 - ((12 * winheight(0) + 9) / 18)
+let s:l = 723 - ((0 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 674
+keepjumps 723
 normal! 0
 wincmd w
 exe '1resize ' . ((&lines * 18 + 29) / 58)
@@ -489,6 +489,7 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
+nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
