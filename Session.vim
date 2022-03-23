@@ -10,10 +10,10 @@ vmap gx <Plug>NetrwBrowseXVis
 nmap gx <Plug>NetrwBrowseX
 noremap h ;
 noremap l h
+nmap <expr> <F28> XTermPasteBegin("i")
 vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()
 nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))
 vmap <expr> <F28> XTermPasteBegin("c")
-nmap <expr> <F28> XTermPasteBegin("i")
 omap <expr> <F28> XTermPasteBegin("i")
 let &cpo=s:cpo_save
 unlet s:cpo_save
@@ -192,12 +192,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 78 - ((17 * winheight(0) + 9) / 18)
+let s:l = 79 - ((9 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 78
-normal! 022|
+keepjumps 79
+normal! 0
 wincmd w
 argglobal
 if bufexists("tra/english/p\#kipid.tra") | buffer tra/english/p\#kipid.tra | else | edit tra/english/p\#kipid.tra | endif
@@ -328,12 +328,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 77 - ((16 * winheight(0) + 9) / 18)
+let s:l = 84 - ((15 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 77
-normal! 0
+keepjumps 84
+normal! 014|
 wincmd w
 argglobal
 if bufexists("d/p\#kipid.d") | buffer d/p\#kipid.d | else | edit d/p\#kipid.d | endif
@@ -464,14 +464,13 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 602 - ((17 * winheight(0) + 9) / 18)
+let s:l = 674 - ((12 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 602
+keepjumps 674
 normal! 0
 wincmd w
-3wincmd w
 exe '1resize ' . ((&lines * 18 + 29) / 58)
 exe '2resize ' . ((&lines * 18 + 29) / 58)
 exe '3resize ' . ((&lines * 18 + 29) / 58)
