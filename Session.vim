@@ -191,12 +191,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 418 - ((17 * winheight(0) + 9) / 18)
+let s:l = 424 - ((10 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 418
-normal! 0
+keepjumps 424
+normal! 021|
 wincmd w
 argglobal
 if bufexists("tra/english/p\#kipid.tra") | buffer tra/english/p\#kipid.tra | else | edit tra/english/p\#kipid.tra | endif
@@ -463,14 +463,13 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1554 - ((17 * winheight(0) + 9) / 18)
+let s:l = 430 - ((8 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1554
-normal! 0
+keepjumps 430
+normal! 050|
 wincmd w
-3wincmd w
 exe '1resize ' . ((&lines * 18 + 29) / 58)
 exe '2resize ' . ((&lines * 18 + 29) / 58)
 exe '3resize ' . ((&lines * 18 + 29) / 58)
