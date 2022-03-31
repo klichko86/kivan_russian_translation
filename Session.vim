@@ -10,10 +10,10 @@ vmap gx <Plug>NetrwBrowseXVis
 nmap gx <Plug>NetrwBrowseX
 noremap h ;
 noremap l h
+nmap <expr> <F28> XTermPasteBegin("i")
 vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()
 nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))
 vmap <expr> <F28> XTermPasteBegin("c")
-nmap <expr> <F28> XTermPasteBegin("i")
 omap <expr> <F28> XTermPasteBegin("i")
 let &cpo=s:cpo_save
 unlet s:cpo_save
@@ -59,9 +59,9 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 25 + 39) / 79)
-exe '2resize ' . ((&lines * 25 + 39) / 79)
-exe '3resize ' . ((&lines * 25 + 39) / 79)
+exe '1resize ' . ((&lines * 18 + 29) / 58)
+exe '2resize ' . ((&lines * 18 + 29) / 58)
+exe '3resize ' . ((&lines * 18 + 29) / 58)
 argglobal
 if bufexists("tra/russian/P\#PID25.tra") | buffer tra/russian/P\#PID25.tra | else | edit tra/russian/P\#PID25.tra | endif
 balt tra/english/p\#pid25.tra
@@ -191,15 +191,15 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 12) / 25)
+let s:l = 38 - ((7 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 38
 normal! 0
 wincmd w
 argglobal
-if bufexists("tra/russian/P\#PID25.tra") | buffer tra/russian/P\#PID25.tra | else | edit tra/russian/P\#PID25.tra | endif
+if bufexists("tra/english/p\#pid25.tra") | buffer tra/english/p\#pid25.tra | else | edit tra/english/p\#pid25.tra | endif
 balt d/p\#pid25.d
 setlocal keymap=
 setlocal noarabic
@@ -295,6 +295,7 @@ setlocal sidescrolloff=-1
 setlocal signcolumn=auto
 setlocal nosmartindent
 setlocal softtabstop=0
+set spell
 setlocal spell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
@@ -326,15 +327,16 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 523 - ((20 * winheight(0) + 12) / 25)
+let s:l = 28 - ((0 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 523
+keepjumps 28
 normal! 0
 wincmd w
 argglobal
 if bufexists("d/p\#pid25.d") | buffer d/p\#pid25.d | else | edit d/p\#pid25.d | endif
+balt tra/russian/P\#PID25.tra
 setlocal keymap=
 setlocal noarabic
 setlocal noautoindent
@@ -429,6 +431,7 @@ setlocal sidescrolloff=-1
 setlocal signcolumn=auto
 setlocal nosmartindent
 setlocal softtabstop=0
+set spell
 setlocal nospell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
@@ -460,21 +463,21 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 12) / 25)
+let s:l = 1971 - ((9 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 1971
 normal! 0
 wincmd w
-3wincmd w
-exe '1resize ' . ((&lines * 25 + 39) / 79)
-exe '2resize ' . ((&lines * 25 + 39) / 79)
-exe '3resize ' . ((&lines * 25 + 39) / 79)
+2wincmd w
+exe '1resize ' . ((&lines * 18 + 29) / 58)
+exe '2resize ' . ((&lines * 18 + 29) / 58)
+exe '3resize ' . ((&lines * 18 + 29) / 58)
 tabnext 1
 badd +1 d/p\#pid25.d
 badd +1 tra/english/p\#pid25.tra
-badd +523 tra/russian/P\#PID25.tra
+badd +30 tra/russian/P\#PID25.tra
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
