@@ -191,12 +191,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 38 - ((7 * winheight(0) + 9) / 18)
+let s:l = 69 - ((16 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 38
-normal! 0
+keepjumps 69
+normal! 023|
 wincmd w
 argglobal
 if bufexists("tra/english/p\#pid25.tra") | buffer tra/english/p\#pid25.tra | else | edit tra/english/p\#pid25.tra | endif
@@ -327,11 +327,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 28 - ((0 * winheight(0) + 9) / 18)
+let s:l = 64 - ((16 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 28
+keepjumps 64
 normal! 0
 wincmd w
 argglobal
@@ -463,14 +463,13 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1971 - ((9 * winheight(0) + 9) / 18)
+let s:l = 361 - ((17 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1971
+keepjumps 361
 normal! 0
 wincmd w
-2wincmd w
 exe '1resize ' . ((&lines * 18 + 29) / 58)
 exe '2resize ' . ((&lines * 18 + 29) / 58)
 exe '3resize ' . ((&lines * 18 + 29) / 58)
@@ -489,7 +488,6 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
