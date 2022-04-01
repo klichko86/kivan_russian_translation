@@ -191,12 +191,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 69 - ((16 * winheight(0) + 9) / 18)
+let s:l = 99 - ((15 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 69
-normal! 023|
+keepjumps 99
+normal! 0
 wincmd w
 argglobal
 if bufexists("tra/english/p\#pid25.tra") | buffer tra/english/p\#pid25.tra | else | edit tra/english/p\#pid25.tra | endif
@@ -327,11 +327,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 64 - ((16 * winheight(0) + 9) / 18)
+let s:l = 78 - ((0 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 64
+keepjumps 78
 normal! 0
 wincmd w
 argglobal
@@ -463,11 +463,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 361 - ((17 * winheight(0) + 9) / 18)
+let s:l = 459 - ((16 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 361
+keepjumps 459
 normal! 0
 wincmd w
 exe '1resize ' . ((&lines * 18 + 29) / 58)
@@ -476,7 +476,7 @@ exe '3resize ' . ((&lines * 18 + 29) / 58)
 tabnext 1
 badd +1 d/p\#pid25.d
 badd +1 tra/english/p\#pid25.tra
-badd +30 tra/russian/P\#PID25.tra
+badd +1 tra/russian/P\#PID25.tra
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
