@@ -879,7 +879,7 @@ END
 
 IF ~~ P#ELVI2.4
 SAY @191
-= @192
+= @92
 IF ~~ THEN EXIT
 END
 
