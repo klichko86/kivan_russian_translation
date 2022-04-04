@@ -1,5 +1,6 @@
 mellonamin - мэльлонамин
 alcarinquë - алкаринкве
+arwenamin - арвэнамин - миледи.
 Namárië! Nai hiruvalyë Arvanaith, Nai elyë hiruva! Namárië - Намариэ! Най хирувальэ Арванайт, Най эльэ хирува! Намариэ...
 isilme - исильмэ
 Cuamin linduva yassen megrille - Куамин линдува йассэн мэгрильлэ - Мой лук будет петь с твоим мечом
@@ -13,3 +14,12 @@ Gurth gothrim Tel'Quessir - Гурт готрим Тэл'Квэссир
 a'maelamin - а'маэльамин
 mela en' coiamin - мэла эн' коиамин
 Sut naa lle umien sina re? - Cут наа ллэ умиэн сина рэ? - Как сегодня твои дела?
+Lle naa belegohtar - Ллэ наа бэльэготар - ты могучий воин.
+Elen sila lumenn omentilmo. - Элэн сила лумэнн оментильмо. - Звезда воссияет в час нашей встречи.
+I'narr en gothrim glinuva nuin I'anor! - И'нарр эн готрим глинува нуйн И'анор! - Кости наших врагов будут блестеть под солнцем!
+Lle quena i'lambe tel' Eldalie? - Ллэ квэна и'ламбэ tel' Элдалиэ? - Ты говоришь по-эльфийски?
+Vanimle sila tiri, arwenamin. - Ванимлэ сила тири, арвэнамин. - Твоя красота сияет ярко, миледи.
+Oio naa elealla alasse', arwenamin. - Оио наа эльэалла алассэ', арвэнамин. - Даже мимолетный твой взгляд всегда радость, миледи.
+diola lle - диола ллэ
+Amin dele ten'lle - Амин дэлэ тэн'ллэ
+I'quelin Mori'Quessier naa ba Mori'Quessir. - И'квэлин Мори'Квэссир наа ба Мори'Квэссир. 
