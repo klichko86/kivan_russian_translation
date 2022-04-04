@@ -41,9 +41,9 @@ endif
 set shortmess=aoO
 argglobal
 %argdel
-$argadd tra/russian/P\#KIVJ.tra
-$argadd tra/english/p\#kivj.tra
-edit tra/russian/P\#KIVJ.tra
+$argadd tra/russian/P\#KIPID.tra
+$argadd tra/english/p\#kipid.tra
+edit tra/russian/P\#KIPID.tra
 set splitbelow splitright
 wincmd _ | wincmd |
 split
@@ -185,16 +185,16 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 585 - ((6 * winheight(0) + 14) / 28)
+let s:l = 567 - ((0 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 585
-normal! 060|
+keepjumps 567
+normal! 0
 wincmd w
 argglobal
-if bufexists("tra/english/p\#kivj.tra") | buffer tra/english/p\#kivj.tra | else | edit tra/english/p\#kivj.tra | endif
-balt tra/russian/P\#KIVJ.tra
+if bufexists("tra/english/p\#kipid.tra") | buffer tra/english/p\#kipid.tra | else | edit tra/english/p\#kipid.tra | endif
+balt tra/russian/P\#KIPID.tra
 setlocal keymap=
 setlocal noarabic
 setlocal noautoindent
@@ -321,18 +321,19 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 531 - ((6 * winheight(0) + 13) / 27)
+let s:l = 554 - ((25 * winheight(0) + 13) / 27)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 531
-normal! 0
+keepjumps 554
+normal! 02|
 wincmd w
+2wincmd w
 exe '1resize ' . ((&lines * 28 + 29) / 58)
 exe '2resize ' . ((&lines * 27 + 29) / 58)
 tabnext 1
-badd +1 tra/russian/P\#KIVJ.tra
-badd +1 tra/english/p\#kivj.tra
+badd +3 tra/russian/P\#KIPID.tra
+badd +1 tra/english/p\#kipid.tra
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
