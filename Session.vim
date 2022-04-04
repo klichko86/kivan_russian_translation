@@ -41,7 +41,7 @@ set shortmess=aoO
 argglobal
 %argdel
 $argadd tra/russian/P\#KIFT25.tra
-$argadd tra/english/p\#kipid.tra
+$argadd tra/english/p\#kift25.tra
 edit tra/russian/P\#KIFT25.tra
 set splitbelow splitright
 wincmd _ | wincmd |
@@ -184,15 +184,16 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 14) / 28)
+let s:l = 102 - ((0 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
-normal! 08|
+keepjumps 102
+normal! 0
 wincmd w
 argglobal
-if bufexists("tra/russian/P\#KIFT25.tra") | buffer tra/russian/P\#KIFT25.tra | else | edit tra/russian/P\#KIFT25.tra | endif
+if bufexists("tra/english/p\#kift25.tra") | buffer tra/english/p\#kift25.tra | else | edit tra/english/p\#kift25.tra | endif
+balt tra/russian/P\#KIFT25.tra
 setlocal keymap=
 setlocal noarabic
 setlocal noautoindent
@@ -319,18 +320,19 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 13) / 27)
+let s:l = 97 - ((0 * winheight(0) + 13) / 27)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
-normal! 08|
+keepjumps 97
+normal! 0
 wincmd w
+2wincmd w
 exe '1resize ' . ((&lines * 28 + 29) / 58)
 exe '2resize ' . ((&lines * 27 + 29) / 58)
 tabnext 1
-badd +0 tra/russian/P\#KIFT25.tra
-badd +0 tra/english/p\#kipid.tra
+badd +1 tra/russian/P\#KIFT25.tra
+badd +1 tra/english/p\#kift25.tra
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
