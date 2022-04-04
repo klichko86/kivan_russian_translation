@@ -23,6 +23,7 @@ set fileencodings=ucs-bom,utf-8,default,latin1
 set helplang=en
 set langmap=ёйцукенгшщзхъфывап��олджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfg;jkh\\l'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>
 set nomodeline
+set pastetoggle=<F29>
 set printoptions=paper:letter
 set ruler
 set runtimepath=~/.vim,~/.vim/plugged/vim-racer/,~/.vim/plugged/rust.vim/,~/.vim/plugged/vim-bracketed-paste/,~/.vim/plugged/vim-sensible/,/var/lib/vim/addons,/etc/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim82,/usr/share/vim/vimfiles/after,/etc/vim/after,/var/lib/vim/addons/after,~/.vim/plugged/rust.vim/after,~/.vim/after
@@ -40,9 +41,9 @@ endif
 set shortmess=aoO
 argglobal
 %argdel
-$argadd tra/russian/P\#KIFT25.tra
-$argadd tra/english/p\#kift25.tra
-edit tra/russian/P\#KIFT25.tra
+$argadd tra/russian/P\#KIVJ.tra
+$argadd tra/english/p\#kivj.tra
+edit tra/russian/P\#KIVJ.tra
 set splitbelow splitright
 wincmd _ | wincmd |
 split
@@ -184,16 +185,16 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 102 - ((0 * winheight(0) + 14) / 28)
+let s:l = 585 - ((6 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 102
-normal! 0
+keepjumps 585
+normal! 060|
 wincmd w
 argglobal
-if bufexists("tra/english/p\#kift25.tra") | buffer tra/english/p\#kift25.tra | else | edit tra/english/p\#kift25.tra | endif
-balt tra/russian/P\#KIFT25.tra
+if bufexists("tra/english/p\#kivj.tra") | buffer tra/english/p\#kivj.tra | else | edit tra/english/p\#kivj.tra | endif
+balt tra/russian/P\#KIVJ.tra
 setlocal keymap=
 setlocal noarabic
 setlocal noautoindent
@@ -320,19 +321,18 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 97 - ((0 * winheight(0) + 13) / 27)
+let s:l = 531 - ((6 * winheight(0) + 13) / 27)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 97
+keepjumps 531
 normal! 0
 wincmd w
-2wincmd w
 exe '1resize ' . ((&lines * 28 + 29) / 58)
 exe '2resize ' . ((&lines * 27 + 29) / 58)
 tabnext 1
-badd +1 tra/russian/P\#KIFT25.tra
-badd +1 tra/english/p\#kift25.tra
+badd +1 tra/russian/P\#KIVJ.tra
+badd +1 tra/english/p\#kivj.tra
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -344,7 +344,6 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
