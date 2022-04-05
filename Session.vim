@@ -26,8 +26,8 @@ set winminheight=0
 set winheight=1
 set winminwidth=0
 set winwidth=1
-exe '1resize ' . ((&lines * 38 + 39) / 78)
-exe '2resize ' . ((&lines * 37 + 39) / 78)
+exe '1resize ' . ((&lines * 38 + 38) / 76)
+exe '2resize ' . ((&lines * 35 + 38) / 76)
 argglobal
 balt tra/russian/P\#PID25.tra
 setlocal fdm=manual
@@ -39,11 +39,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 19) / 38)
+let s:l = 165 - ((4 * winheight(0) + 19) / 38)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 165
 normal! 0
 wincmd w
 argglobal
@@ -58,15 +58,16 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 18) / 37)
+let s:l = 185 - ((5 * winheight(0) + 17) / 35)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
-normal! 0
+keepjumps 185
+normal! 072|
 wincmd w
-exe '1resize ' . ((&lines * 38 + 39) / 78)
-exe '2resize ' . ((&lines * 37 + 39) / 78)
+2wincmd w
+exe '1resize ' . ((&lines * 38 + 38) / 76)
+exe '2resize ' . ((&lines * 35 + 38) / 76)
 tabnext 1
 badd +1 tra/english/p\#pid25.tra
 badd +1 tra/russian/P\#PID25.tra
@@ -81,7 +82,6 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
