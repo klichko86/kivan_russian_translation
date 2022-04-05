@@ -1,12 +1,48 @@
+Краткий курс эльфийского:
+~Plurals for nouns are denoted by the endings r, ea, ie, or, io, and oo... whichever one makes the word more fluid.  But if you would like to indicate great numbers or respect, you will use the ending - rim.~$
+~For example: nimbrethie is "birches" from "nibreth" - a birch. Aredhelrim is for the elf lords.~$
+~When used alone, pronouns express subjects, as in Amin mela lle - I love you.~$
+~But the same form is used for the possessive pronoun: melamin - my love.~$
+~There are two forms of the possessive constructions: simple and formal.~$
+~In simple possessive, you would simply append pronoun after the object. For example: 'irmo' means 'desire', and 'irmoamin' means 'my desire'.~$
+~The formal possessive requires to separate subject from possessor with 'en', like in the 'arwen en amin', which could be translated 'the lady of mine', or, My Lady.~$
+~The adjectives are appended to the front of the object or action they are describing. For example, 'coria' is 'purple', and 'lote' is 'flower', so 'corialote' is a 'purple flower'.~$
+~But the violet is 'helin'.~$
+~The superlatives are formed by adding the suffixes -n and -in for the words ending with a vowel, like this:  'tiri,' 'tirin,' 'tirinin' for 'bright', 'brighter' and the 'brightest'.~$
+~The adjectives ending with a vowel take on the suffixes -in and -inin: 'calen', 'calenin', 'caleninin', for 'green', 'greener' and the 'greenest'.~$
+~Adverbs follow the verbs. For example, 'cormamin glina tiri' means 'My heart gleams brightly'.~$
+~To conjugate a verb to past, present and future tenses, add the endings -e, -a, and -uva to he infinitive form.  For example, ele- is an infinitive for of the verb 'I see'. 'Amin elee'  is 'I saw', 'amin elea' is 'I see' an    d 'amin eleuva' is 'I shall see'.~$
+~The conditional mood uses the ending -aya, as in 'amin eleaya' for 'I would see'.~$
+~When appending pronouns or adjectives, you may drop letters from the appendor in order to eliminate awkward sequences of letters: to avoid three consonants in a row, three vowels in a row, or two of the same vowel in a row.     For example I would say 'lashae', a 'wide ocean' instead of 'lannshae', omitting the 'nn' on the end of 'wide'.~$
+
+~Множественное число для существительных обозначается окончаниями "р", "эа", "иэ", "ор", "ио" и "oo"... в зависимости от того, что делает слово более текучим. Но если хочется указать значительное количество или уважение, нужн    о использовать окончание - "рим".~$
+~Например: слово "нимбрэтиэ" - это "березы", образованное от "нибрэт" - "береза". А "арэдхэльрим" используется для эльфийских лордов.~$
+~Когда местоимения используют отдельно, они выражают субъект, как в "Амин мэла ллэ" - Я тебя люблю.~$
+~Но та же форма используется и для притяжательного местоимения: мэльамин - моя любовь.~$
+~Существуют две формы притяжательных конструкций: простая и формальная.~$
+~В простом притяжательном обороте, местоимение добавляется после объекта. Например: "ирмо" означает "желание", а "ирмоамин" означает "мое желание".~$
+~Формальная притяжательная форма требует отделить субъект от обладателя с помощью "эн", как в "арвэн эн амин", что можно перевести как "миледи" или "моя госпожа".~$
+~Прилагательные добавляются перед объектом или действием, которые они описывают. Например, "кориа" - это "пурпурный", "лотэ" - "цветок", поэтому "кориалотэ" - это "пурпурный цветок".~$
+~Но фиолетовый - это "хэльин".~$
+~Сравнительная и превосходная степени образуется путем добавления суффиксов "-н" и "-ин" для слов, заканчивающихся гласной, например: "тири", "тирин", и "тиринин" для "ярко", "ярче" и "ярчайший".$
+~К прилагательным, оканчивающимся на гласную, добавляются суффиксы "-ин" и "-инин", например: "кален", "каленин", "каленинин", означает "зеленый", "зеленее" и "самый зеленый".~$
+~Наречия ставятся сразу после глаголов. Например, "кормамин глина тири" означает "Мое сердце ярко светится".~$
+~Чтобы поставить глагол в прошедшую, настоящую и будущую формы, надо добавить окончания "-э", "-а" и "-ува" к неопределенной форме. Например, "элэ" - это инфинитив глагола "видеть". "Амин элээ" - это "я видел", "амин элэа" -     "я вижу" а "амин элэува" - "я увижу".~$
+~Условное наклонение использует окончание "-айа", так "амин элэайа" значит "я хотел бы видеть".~$
+~Добавляя местоимения или прилагательные можно выбрасывать буквы из добавляемого, для исключения трудно-выговариваемых последовательностей: чтобы избежать трех согласных подряд, трех гласных подряд или двух одинаковых гласных     подряд. Например, я скажу "лашаэ", "широкий океан" вместо "ланншаэ", опустив "нн" в конце слова "широкий".~$
+
+Основной сайт где написано как надо правильно транслитерировать: http://wiki.evendim.ru/index.php?title=%D0%9A%D0%B2%D0%B5%D0%BD%D1%8C%D1%8F,_%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5
+
+Эльфийские фразы и из транслитерации/перевод:
+
 mellonamin - мэльлонамин
 alcarinquë - алкаринкве
 arwenamin - арвэнамин - миледи.
 a'mael - возлюбленная - а'маэль
 isilme - лунный свет - исильмэ
-cor'amin - кор'амин
+cor'amin - мое сердце - кор'амин
 melamin - мэльамин - моя любовь.
 arwen en amin - Арвэн эн амин - моя госпожа, миледи, более формально
-
 
 Namárië! Nai hiruvalyë Arvanaith, Nai elyë hiruva! Namárië - Намариэ! Най хирувальэ Арванайт, Най эльэ хирува! Намариэ...
 Cuamin linduva yassen megrille - Куамин линдува йассэн мэгрильлэ - Мой лук будет петь с твоим мечом
@@ -16,7 +52,7 @@ Nae saian luume' - Наэ сайан луумэ'
 Cormlle naa tanya tel'raa - Кормллэ наа танйа тель'раа - у тебя сердце льва
 Ed' i'ear ar'elenea! - Эд' и'эар ар'эльэнэа
 n'lava - н'лава
-Gurth gothrim Tel'Quessir - Гурт готрим Тэл'Квэссир
+Gurth gothrim Tel'Quessir - смерть врагам эльфов - Гурт готрим Тэл'Квэссир
 a'maelamin - а'маэльамин
 mela en' coiamin - мэла эн' коиамин
 Sut naa lle umien sina re? - Cут наа ллэ умиэн сина рэ? - Как сегодня твои дела?
@@ -43,4 +79,87 @@ helin - хэльин - фиолетовый
 'calen', 'calenin', 'caleninin' - "кален", "каленин", "каленинин" - "зеленый", "зеленее" и "самый зеленый"
 cormamin glina tiri - кормамин глина тири - мое сердце ярко светится
 'ele', 'Amin elee', 'amin elea', 'amin eleuva', 'amin eleaya' - "элэ", "Амин элээ", "амин элэа", "амин элэува", "амин элэайа" - "видеть" "я видел" "я вижу", "я увижу", "я хотел бы видеть".
+
+lashae - лашаэ - широкий океан
+Karnela en amin - Займись со мной любовью.
+Lle naa mela en'coiamin - ты - любовь всей моей жизни
+Amin sinte tanya lle quena I'lambe tel'Eldalie.
+miqula en amin - поцелуй меня
+Seasamin - c удовольствием
+alasse'amin - моя радость
+Er, arta, nelde, kinta, lempe, enque, etso, olto, nerte, kainen. - числа от 1 до 10.
+alcarinquë - "славная", "сияющая"
+melisse - любимая, влюбленная, любовник
+A'mael'amin
+Rima ten'ta! (Бежим отсюда!)
+Antolle ulua sulrim. (Твой рот издает много шума.)
+Lle holma ve' edan. (Ты смердишь, как человек.)
+Mae govannen! (Рада встрече!)
+Amin anta est. (Мне нужен отдых.)
+Lle merna aut? (Ну что идем?)
+Amin khiluva lle a' gurtha ar' thar! (Я буду следовать за тобой до самой смерти и дальше!)
+Nadorhuanrim! (Трусливые собаки!)
+Tua amin! (Помогите мне!)
+Cormamin niuve tenna' ta elea lle au. (Мое сердце будет страдать до тех пор, пока не увидит тебя снова)
+Tanya awra! (Это больно!)
+Aa' lasser coia orn n' omenta gurtha... (Пусть листья деревьев будут вечнозелеными...)
+Malia ten' yulna? (Хочешь выпить?)
+Ta naa feuyaer sinome. (Здесь отвратительно.)
+Cormamin lindua ele I'anor. (Мое сердце поет, когда я вижу солнце.)
+Elen sila lumen. (Звезды сияют.)
+Uuma ma' ten' rashwe, ta tuluva a' lle. (Не ищи неприятностей, они сами тебя найдут.)
+Quel marth! (Удачи!)
+Tanya nae n'quel. (Это было нехорошо.)
+Amin naa lle nai! (Я в твоем распоряжении!)
+Lle anta amin tu? (Нужна помощь?)
+Amin uuma malia. (Мне все равно.)
+Amin weera yassen lle. (Я согласна с тобой.)
+Tanya nae sai eina. (Это было очень смешно.)
+Detholalle. (Твой выбор.)
+Manka lle merna. (Если ты хочешь.)
+Fe'amin nwalya. (Моя душа болит.)
+Tulien! (Идет!)
+Seasamin. (С удовольствием.)
+Lye nuquernuva sen e dagor. (Мы победим их в бою.)
+Lle creoso. (Добро пожаловать.)
+Ed' i'ear ar' elenea! (Во имя моря и звезд!)
+Lle lakwenien? (Ты издеваешься?)
+Tessa sina ten' amin. (Придержи это для меня.)
+Cam'wethrin en marth. (Воровская удача.)
+Lle neek amin? (Ты видишь меня?)
+Rina istorlle... Rina istorlle... Sai *maara*! (Запоминай заклинания... Запоминай заклинания... Очень *надо*!)
+En! Ta naa neuma! (Смотри! Это ловушка!)
+
+Аi'atar – маленький отец.
+Аlcarinquë - Алкаринквэ - название звезды. Как вариант Аларинквэ.$
+Аlasse - радость, веселье.$
+Amin hiraetha - извини, извините.$
+Aa' menealle nauva calen ar' malta - пусть твои пути будут зелеными и золотыми.$
+Beleger - высокий?
+Нallaer - высокий?
+Khila amin - эльфийское обращение,следуй(те) за мной.$
+Lle merna salk - ты хочешь потанцевать с листьями (танец с листьями).$
+
+Mae govannen - [м`аэ гов`аннен] - добрая встреча (в значении "рад(а) встрече").$
+Nykerim'amin
+N'Tel'Quessir - эльфийское слово, означающее «Не Эльфийский Народ», и используется для обозначения рас за пределами Tel'Quessir(не Tel'Quessir, не Эльфы),также это несколько родственных рас фей-существ, которых по ошибке относят к эльфам.$
+Namаriе - Намариэ - прощание, прощай.$
+Nessaer - молодой.$
+'Quel undome, a'maelamin - спокойной ночи, мой любимый(ая).$
+Quel kaima, lle anta esta - спи сладко, тебе нужно отдохнуть.$
+Quessir - эльфийское обращение,обозначает "Народ" (пишется на английском). $
+Tel'Quess или Tel'Quessir (одно и тоже).$
+Tel'Quessir - эльфийское слово обозначающее "Эльфийский Народ" (Эльфы).$
+Tel'gothrim - Враги Эльфов.$
+Tenna 'telwan san' - до скорого, увидимся позже.$
+Uuma dela - не волнуйся, не беспокойся, не переживай.$
+Vanya sulie - попутного ветра.$
+Vanima - красивый, красавица и т.п Vanima перевелось как beautiful, а Vanimaer не переводитcя.$
+Vedui' il'er - приветствую всех.$
+Voronwer - верный.$
+Y'landrothiel - Звезда Моряка,Морская звезда (Ieriyn-Иерин).$
+
+
+
+
 
