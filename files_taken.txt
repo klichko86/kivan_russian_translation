@@ -1,3 +1,4 @@
-p#kimaq.tra, p#kimw.tra - klichko86
-p#kivsoa - Jericho2
-P#KIPID.tra - me
+P#KIRIBF.tra 
+P#KIRING.tra 
+P#KIV01.tra 
+P#KIVAN.tra 
