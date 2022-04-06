@@ -46,12 +46,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 120 - ((22 * winheight(0) + 12) / 24)
+let s:l = 115 - ((1 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 120
-normal! 053|
+keepjumps 115
+normal! 037|
 wincmd w
 argglobal
 if bufexists("tra/russian/P\#PIDE25.tra") | buffer tra/russian/P\#PIDE25.tra | else | edit tra/russian/P\#PIDE25.tra | endif
@@ -65,12 +65,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 119 - ((1 * winheight(0) + 12) / 24)
+let s:l = 130 - ((16 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 119
-normal! 048|
+keepjumps 130
+normal! 016|
 wincmd w
 argglobal
 if bufexists("d/p\#pide25.d") | buffer d/p\#pide25.d | else | edit d/p\#pide25.d | endif
@@ -84,11 +84,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 320 - ((22 * winheight(0) + 12) / 24)
+let s:l = 360 - ((22 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 320
+keepjumps 360
 normal! 0
 wincmd w
 2wincmd w
