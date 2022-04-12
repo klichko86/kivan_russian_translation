@@ -10,10 +10,10 @@ vmap gx <Plug>NetrwBrowseXVis
 nmap gx <Plug>NetrwBrowseX
 noremap h ;
 noremap l h
+nmap <expr> <F28> XTermPasteBegin("i")
 vnoremap <silent> <Plug>NetrwBrowseXVis :call netrw#BrowseXVis()
 nnoremap <silent> <Plug>NetrwBrowseX :call netrw#BrowseX(netrw#GX(),netrw#CheckIfRemote(netrw#GX()))
 vmap <expr> <F28> XTermPasteBegin("c")
-nmap <expr> <F28> XTermPasteBegin("i")
 omap <expr> <F28> XTermPasteBegin("i")
 let &cpo=s:cpo_save
 unlet s:cpo_save
@@ -23,6 +23,7 @@ set fileencodings=ucs-bom,utf-8,default,latin1
 set helplang=en
 set langmap=ёйцукенгшщзхъфывап��олджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfg;jkh\\l'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>
 set nomodeline
+set pastetoggle=<F29>
 set printoptions=paper:letter
 set ruler
 set runtimepath=~/.vim,~/.vim/plugged/vim-racer/,~/.vim/plugged/rust.vim/,~/.vim/plugged/vim-bracketed-paste/,~/.vim/plugged/vim-sensible/,/var/lib/vim/addons,/etc/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim82,/usr/share/vim/vimfiles/after,/etc/vim/after,/var/lib/vim/addons/after,~/.vim/plugged/rust.vim/after,~/.vim/after
@@ -189,12 +190,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1074 - ((17 * winheight(0) + 9) / 18)
+let s:l = 1084 - ((5 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1074
-normal! 0
+keepjumps 1084
+normal! 014|
 wincmd w
 argglobal
 if bufexists("tra/english/p\#kinew.tra") | buffer tra/english/p\#kinew.tra | else | edit tra/english/p\#kinew.tra | endif
@@ -325,11 +326,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1075 - ((17 * winheight(0) + 9) / 18)
+let s:l = 1088 - ((11 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1075
+keepjumps 1088
 normal! 02|
 wincmd w
 argglobal
@@ -461,12 +462,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 2873 - ((16 * winheight(0) + 9) / 18)
+let s:l = 2933 - ((17 * winheight(0) + 9) / 18)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 2873
-normal! 06|
+keepjumps 2933
+normal! 0
 wincmd w
 exe '1resize ' . ((&lines * 18 + 29) / 58)
 exe '2resize ' . ((&lines * 18 + 29) / 58)
