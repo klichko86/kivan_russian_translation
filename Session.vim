@@ -43,12 +43,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1289 - ((22 * winheight(0) + 12) / 24)
+let s:l = 1337 - ((12 * winheight(0) + 12) / 24)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1289
-normal! 0
+keepjumps 1337
+normal! 048|
 wincmd w
 argglobal
 if bufexists("tra/english/p\#kinew.tra") | buffer tra/english/p\#kinew.tra | else | edit tra/english/p\#kinew.tra | endif
@@ -62,11 +62,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1289 - ((24 * winheight(0) + 13) / 26)
+let s:l = 1331 - ((16 * winheight(0) + 13) / 26)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1289
+keepjumps 1331
 normal! 036|
 wincmd w
 argglobal
@@ -81,14 +81,13 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 3365 - ((20 * winheight(0) + 11) / 22)
+let s:l = 3479 - ((5 * winheight(0) + 11) / 22)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 3365
-normal! 0
+keepjumps 3479
+normal! 09|
 wincmd w
-3wincmd w
 exe '1resize ' . ((&lines * 24 + 38) / 76)
 exe '2resize ' . ((&lines * 26 + 38) / 76)
 exe '3resize ' . ((&lines * 22 + 38) / 76)
@@ -107,7 +106,6 @@ if filereadable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
-nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
